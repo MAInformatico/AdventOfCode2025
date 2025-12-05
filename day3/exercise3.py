@@ -72,5 +72,5 @@ def day_1(filename, first=True):
 
 if __name__ == "__main__":
     for arg in sys.argv[1:]:
-        print(f'day2 part 1: {day_1(arg, True)}')
-        print(f'day2 part 2: {day_1(arg, False)}')
+        print(f'day3 part 1: {day_1(arg, True)}')
+        print(f'day3 part 2: {day_1(arg, False)}')
