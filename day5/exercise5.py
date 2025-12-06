@@ -63,7 +63,7 @@ def part_2(ranges):
     return fresh
 
 
-def day_1(filename, first=True):
+def day_5(filename, first=True):
     ranges = []
 
     with open(filename) as file:
@@ -79,5 +79,5 @@ def day_1(filename, first=True):
 
 if __name__ == "__main__":
     for arg in sys.argv[1:]:
-        print(f'day5 part 1: {day_1(arg, True)}')
-        print(f'day5 part 2: {day_1(arg, False)}')
+        print(f'day5 part 1: {day_5(arg, True)}')
+        print(f'day5 part 2: {day_5(arg, False)}')

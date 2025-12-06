@@ -32,7 +32,7 @@ def part_2(products):
     return result
 
 
-def day_1(filename, first=True):
+def day_2(filename, first=True):
     products = []
 
     with open(filename) as file:
@@ -48,5 +48,5 @@ def day_1(filename, first=True):
 
 if __name__ == "__main__":
     for arg in sys.argv[1:]:
-        print(f'day2 part 1: {day_1(arg, True)}')
-        print(f'day2 part 2: {day_1(arg, False)}')
+        print(f'day2 part 1: {day_2(arg, True)}')
+        print(f'day2 part 2: {day_2(arg, False)}')

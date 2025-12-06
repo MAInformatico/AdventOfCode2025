@@ -24,7 +24,7 @@ def part_2(paper_map):
     return removed
 
 
-def day_1(filename, first=True):
+def day_4(filename, first=True):
     paper_map = []
 
     with open(filename) as file:
@@ -40,5 +40,5 @@ def day_1(filename, first=True):
 
 if __name__ == "__main__":
     for arg in sys.argv[1:]:
-        print(f'day4 part 1: {day_1(arg, True)}')
-        print(f'day4 part 2: {day_1(arg, False)}')
+        print(f'day4 part 1: {day_4(arg, True)}')
+        print(f'day4 part 2: {day_4(arg, False)}')
