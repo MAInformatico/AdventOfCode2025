@@ -37,7 +37,31 @@ def part_1(ranges):
     return fresh    
 
 def part_2(ranges):
-    pass
+    blank_index = ranges.index("")
+    range_lines = ranges[:blank_index]
+    
+    intervals = []
+    
+    for line in range_lines:
+        if '-' in line:
+            start, end = map(int, line.split('-'))
+            intervals.append((start, end))
+    
+    intervals.sort()
+    
+    merged = []
+    for start, end in intervals:
+        if not merged or merged[-1][1] < start:
+            merged.append([start, end])
+        else:
+            merged[-1][1] = max(merged[-1][1], end)
+
+    fresh = 0
+    for start, end in merged:
+        fresh += end - start + 1 
+    
+    return fresh
+
 
 def day_1(filename, first=True):
     ranges = []
